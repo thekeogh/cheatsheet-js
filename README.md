@@ -1,0 +1,3 @@
+# JavaScript Essentials: A4 Printable Cheatsheet
+
+This sheet covers essential array and Math methods, ideal for quick reference. Designed with flexibility in mind, it supports three print sizes—large, medium, and small—so you can choose the best fit for your workspace, whether it’s up close or viewed from a distance. Perfect for JavaScript and TypeScript developers looking for a handy, on-the-wall resource.

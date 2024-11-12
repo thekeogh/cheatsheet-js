@@ -11,7 +11,9 @@
   margin: 0;
 }
 body {
-  margin: var(--dimension-section-gap);
+  width: max-content;
+  min-width: fit-content;
+  padding: var(--dimension-section-gap);
   background-color: var(--color-purple-50);
   gap: var(--dimension-section-gap);
   align-items: flex-start;
@@ -29,7 +31,7 @@ section {
   justify-content: flex-start;
   display: flex
 }
-article {
+.page {
   width: 210mm;
   height: 297mm;
   max-height: 297mm;
@@ -47,13 +49,84 @@ article {
 }
 
 /**
+ * Code
+ */
+.code pre,
+.code pre code {
+  font-family: var(--font-code);
+}
+pre {
+  border-radius: var(--dimension-border-radius)
+}
+
+/**
+ * Cheats
+ */
+article {
+  padding: var(--dimension-page-padding);
+  background-color: #fff;
+  border-radius: var(--dimension-border-radius);
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 0;
+  overflow: auto;
+  position: relative;
+}
+article:last-child {
+  margin: 0;
+}
+
+/**
+ * Bullets
+ */
+article ul {
+  margin: var(--dimension-page-padding) 0 0;
+  gap: var(--dimension-page-padding);
+  list-style: none;
+  align-items: center;
+  display: flex
+}
+article ul li {
+  color: #fff;
+  font-family: var(--font-code);
+  background: var(--color-blue-100);
+  border-radius: 6px;
+}
+
+/**
+ * Notes
+ */
+article aside {
+  width: 100%;
+  color: #fff;
+  font-family: var(--font-code);
+  background: var(--color-orange-100);
+  border-radius: 0 0 var(--dimension-border-radius);
+}
+
+/**
+ * Typography
+ */
+h1 {
+  font-family: var(--font-body);
+  color: var(--color-green-100);
+  font-weight: 900;
+}
+p {
+  line-height: 1.4;
+}
+
+
+
+/**
  * Print
  */
 @media print {
   body {
     width: 210mm;
+    min-width: auto;
     height: auto;
-    margin: 0;
+    padding: 0;
     background-color: #ffffff;
     gap: 0;
     display: block;
@@ -63,7 +136,7 @@ article {
     display: block;
     page-break-after: always;
   }
-  article {
+  .page {
     box-shadow: none;
     page-break-after: always;
   }

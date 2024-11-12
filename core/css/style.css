@@ -1,0 +1,96 @@
+/**
+ * Top cheatsheet styles.
+ * ----------------------------------------------------------------------------
+ * Defines styles for the largest cheatsheet variant which accommodates a
+ * maximum of two cheatsheets at full size.
+ */
+
+
+/**
+ * Typography
+ */
+.top h1 {
+  margin: 0;
+  font-size: var(--dimension-top-h1)
+}
+.top p {
+  margin: 0 0 10px;
+  font-size: var(--dimension-top-p);
+}
+
+/**
+ * Code
+ */
+.top .code pre {
+  padding: 24px;
+  line-height: 1.3;
+}
+.top .code pre code {
+  font-size: var(--dimension-top-code)
+}
+
+/**
+ * Bullets
+ */
+.top article ul li {
+  padding: 10px 20px;
+  font-size: var(--dimension-top-aside);
+}
+
+/**
+ * Notes
+ */
+.top article aside {
+  padding: 20px;
+  font-size: var(--dimension-top-aside);
+  left: 0;
+  bottom: 0;
+  position: absolute;
+}
+
+/**
+ * Middle cheatsheet styles.
+ * ----------------------------------------------------------------------------
+ * Defines styles for the medium cheatsheet variant which accommodates a
+ * maximum of three cheatsheets at medium size.
+ */
+
+/**
+ * Typography
+ */
+.middle h1 {
+  margin: 0;
+  font-size: var(--dimension-middle-h1)
+}
+.middle p {
+  margin: 0 0 7px;
+  font-size: var(--dimension-middle-p);
+}
+
+/**
+ * Code
+ */
+.middle .code pre {
+  padding: 18px;
+  line-height: 1.15;
+}
+.middle .code pre code {
+  font-size: var(--dimension-middle-code)
+}
+
+/**
+ * Bullets (UNTESTED SO MAY NEED TO CHANGE)
+ */
+.middle article ul li {
+  padding: 10px 20px;
+  font-size: var(--dimension-middle-aside);
+}
+
+/**
+ * Bottom cheatsheet styles.
+ * ----------------------------------------------------------------------------
+ * Defines styles for the smallest cheatsheet variant which accommodates a
+ * maximum of four cheatsheets at the smallest size.
+ */
+
+/* ... */

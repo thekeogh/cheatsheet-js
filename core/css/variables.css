@@ -10,6 +10,7 @@
   --color-green-100: #1bbe73;
   --color-blue-100: #0266d6;
   --color-grey-100: #717b8d;
+  --color-orange-100: #FF5722;
 
   /* Dimensions */
   --dimension-section-gap: 70px;
@@ -23,8 +24,8 @@
   --dimension-top-aside: 24px;
 
   /* Middle */
-  --dimension-middle-h1: 49px;
-  --dimension-middle-p: 29px;
+  --dimension-middle-h1: 45px;
+  --dimension-middle-p: 30px;
   --dimension-middle-code: var(--dimension-middle-p);
   --dimension-middle-aside: 24px;
 }

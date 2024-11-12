@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Top Cheatsheets</title>
+  <title>Cheatsheet JS</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,37 +17,427 @@
 </head>
 <body>
 
+<!-- 
+=========================================================== 
+  TOP
+===========================================================  
+-->
 <section class="top">
 
-  <article>
-    SHEET
-  </article>
-  <article>
-    SHEET
-  </article>
-  <article>
-    SHEET
-  </article>
+<!-- Page 1 -->
+<div class="page">
+<article>
+<h1>new Array</h1>
+<p>Creates a new array with optional fixed length or initial elements.</p>
+<div class="code">// Empty array
+new Array();
+// []
+
+// Array with fixed length
+new Array(5);
+// [ <5 empty items> ]
+
+// Array with elements
+new Array("a", "b");
+// ["a", "b"]
+
+// Array with array elements
+new Array([1, 2], [3]);
+// [[1, 2], [3]]</div>
+</article>
+</div>
+
+<!-- Page 2 -->
+<div class="page">
+<article>
+<h1>Array.from</h1>
+<p>Creates a new array instance from an array-like or iterable object.</p>
+<div class="code">// From array-like object
+Array.from("yo"); // ["y", "o"]
+
+// With map function
+Array.from(
+  [1, 2], x => x * 2
+); // [2, 4]
+
+// Create an array of 3 zeroes
+Array.from(
+  { length: 3 }, () => 0
+); // [0, 0, 0]
+
+// Convert Set to Array
+Array.from(new Set([1, 2, 2]));
+// [1, 2]</div>
+</article>
+</div>
+
+<!-- Page 3 -->
+<div class="page">
+<article>
+<h1>Array.of</h1>
+<p>Creates a new array from the provided arguments, regardless of type.</p>
+<div class="code">// Array with elements
+Array.of("a", "b");
+// ["a", "b"]
+
+// Array with undefined element
+Array.of(undefined);
+// [undefined]
+
+// Array with a single number
+Array.of(3);
+// [3]
+
+// Array with nested arrays
+Array.of([1, 2], [3, 4]);
+// [[1, 2], [3, 4]]</div>
+</article>
+</div>
+
+<!-- Page 4 -->
+<div class="page">
+<article>
+<h1>for</h1>
+<p>A standard loop that iterates through a block of code a set number of times.</p>
+<div class="code">for (let i = 0; i < 3; i++) {
+  console.log(i);
+}
+// 0, 1, 2</div>
+<ul>
+  <li>break</li>
+  <li>continue</li>
+  <li>throw</li>
+</ul>
+</article>
+<!-- ------- -->
+<article>
+<h1>forEach</h1>
+<p>Executes a provided function once for each array element.</p>
+<div class="code">["a", "b"].forEach((val, idx) =>
+  console.log(val)
+);
+// "a", "b"</div>
+<ul>
+  <li>return</li>
+  <li>throw</li>
+</ul>
+</article>
+</div>
+
+<!-- Page 5 -->
+<div class="page">
+<article>
+<h1>while</h1>
+<p>Repeats code while condition is true.</p>
+<div class="code">let i = 0;
+while (i < 3) {
+  console.log(i); // 0, 1, 2
+  i++;
+}</div>
+<ul>
+  <li>break</li>
+  <li>continue</li>
+  <li>throw</li>
+</ul>
+</article>
+<!-- ------- -->
+<article>
+<h1>do...while</h1>
+<p>Runs once, then repeats while true.</p>
+<div class="code">let i = 0;
+do {
+  console.log(i); // 0, 1, 2
+  i++;
+} while (i < 3);</div>
+<ul>
+  <li>break</li>
+  <li>continue</li>
+  <li>throw</li>
+</ul>
+</article>
+</div>
+
+<!-- Page 6 -->
+<div class="page">
+<article>
+<h1>for...of</h1>
+<p>Loops through each value in an array, string, Map, or Set.</p>
+<div class="code">// Loop through array values
+const arr = ["a", "b"];
+for (const value of arr) {
+  console.log(value);
+}
+// "a", "b"
+
+// Loop through Set values
+const set = new Set([1, 2, 3]);
+for (const num of set) {
+  console.log(num);
+}
+// 1, 2, 3</div>
+<ul>
+  <li>break</li>
+  <li>continue</li>
+  <li>throw</li>
+</ul>
+<aside>
+  Suitable for <strong>arrays</strong>.
+</aside>
+</article>
+</div>
+
+<!-- Page 7 -->
+<div class="page">
+<article>
+<h1>for...in</h1>
+<p>Loops through enumerable property names of an object.</p>
+<div class="code">// Basic object property iteration
+const obj = { a: 1, b: 2 };
+for (const key in obj) {
+  console.log(key);
+}
+// "a", "b"
+
+// Array indices as strings
+const arr = ["a", "b", "c"];
+for (const index in arr) {
+  console.log(index);
+}
+// "0", "1", "2"</div>
+<ul>
+  <li>break</li>
+  <li>continue</li>
+  <li>throw</li>
+</ul>
+<aside>
+  Suitable for <strong>objects</strong>.
+</aside>
+</article>
+</div>
 
 </section>
 
-
+<!-- 
+=========================================================== 
+  MIDDLE
+===========================================================  
+-->
 <section class="middle">
 
-  <article>
-    MID SHEET
-  </article>
-  <article>
-    MID SHEET
-  </article>
-  <article>
-    MID SHEET
-  </article>
-  <article>
-    MID SHEET
-  </article>
+<!-- Page 1 -->
+<div class="page">
+<article>
+<h1>at</h1>
+<p>Returns an element at a given index.</p>
+<div class="code">// Get element at index 1
+[10, 20, 30].at(1); // 20
+
+// Get element from the end
+[10, 20, 30].at(-1); // 30</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>concat</h1>
+<p>Merges arrays into a new array.</p>
+<div class="code">// Concatenate arrays
+[1, 2].concat([3, 4]); // [1, 2, 3, 4]
+
+// Concatenate with a single element
+["a"].concat("b", "c"); // ["a", "b", "c"]</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>copyWithin</h1>
+<p>Copies part of an array to another location within it.</p>
+<div class="code">// Copy last two elements to the start
+[1, 2, 3].copyWithin(0, 2); // [3, 2, 3]
+
+// Copy elements within the middle
+[1, 2, 3].copyWithin(1, 0, 1); // [1, 1, 3]</div>
+</article>
+</div>
+
+<!-- Page 2 -->
+<div class="page">
+<article>
+<h1>find</h1>
+<p>Returns the first element passing the test function.</p>
+<div class="code">// Find first element starting with "c"
+["apple", "banana", "cherry"].find(
+  (val, idx) => val.startsWith("c")
+);
+// "cherry"</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>findIndex</h1>
+<p>Returns the index of the first matching element.</p>
+<div class="code">// Find first index starting with "b"
+["apple", "banana", "berry"].findIndex(
+  (val, idx) => val.startsWith("b")
+);
+// 1</div>
+</article>
+<article>
+<h1>findLast</h1>
+<p>Returns the last element passing the test function.</p>
+<div class="code">// Find last element starting with "b"
+["apple", "banana", "berry"].findLast(
+  (val, idx) => val.startsWith("b")
+);
+// "berry"</div>
+</article>
+</div>
+
+<!-- Page 3 -->
+<div class="page">
+<article>
+<h1>indexOf</h1>
+<p>Returns first index of element, -1 if not found.</p>
+<div class="code">// Find the first occurrence of "b"
+["a", "b", "c", "b"].indexOf("b"); // 1
+
+// ...Start from index 2
+["a", "b", "c", "b"].indexOf("b", 2); // 3</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>join()</h1>
+<p>Joins array elements into a string.</p>
+<div class="code">// Join array elements with a dash separator
+["a", "b", "c"].join("-");
+// "a-b-c"</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>keys</h1>
+<p>Returns an iterator with array indices as keys.</p>
+<div class="code">let iterator = ["a", "b", "c"].keys();
+iterator.next().value;
+// 0</div>
+</article>
+</div>
+
+<!-- Page 4 -->
+<div class="page">
+<article>
+<h1>reduce</h1>
+<p>Combines array elements into a single value.</p>
+<div class="code">// Sum all numbers
+[3, 4].reduce((a, v, idx) => a + v); // 7
+
+// Join with prefix (initial value)
+[1, 2].reduce((a, v) => a + v, "x"); // "x12"</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>reduceRight</h1>
+<p>Combines array elements from right to left.</p>
+<div class="code">// Build array from right to left
+[1, 2, 3].reduceRight(
+  (acc, val, idx) => [...acc, val],
+[]);
+// [3, 2, 1]</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>reverse</h1>
+<p>Reverses array elements in place, modifying the array.</p>
+<div class="code">// Reverse the array in place
+["a", "b", "c"].reverse();
+// ["c", "b", "a"]</div>
+</article>
+</div>
+
+<!-- Page 5 -->
+<div class="page">
+<article>
+<h1>splice</h1>
+<p>Modifies array and returns deleted elements.</p>
+<div class="code">// Remove index 1 and insert "x"
+let arr = ["a", "b", "c"];
+arr.splice(1, 1, "x"); // ["b"]
+// Remove the last two elements
+arr.splice(-2, 2); // ["x", "c"]</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>unshift</h1>
+<p>Adds elements to array start and returns new length.</p>
+<div class="code">let arr = ["b", "c"];
+arr.unshift("a");
+// 3
+// arr is now ["a", "b", "c"]</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>values</h1>
+<p>Returns an iterator with values for each array index.</p>
+<div class="code">let iterator = ["a", "b", "c"].values();
+iterator.next().value;
+// "a"</div>
+</article>
+</div>
+
+<!-- Page 6 -->
+<div class="page">
+<article>
+<h1>Math.pow</h1>
+<p>Raises a number to a specified power, equivalent to multiplying the base by itself for the given exponent.</p>
+<div class="code">// Raise 2 to the power of 3
+Math.pow(2, 3);
+// 8</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>Square</h1>
+<p>Multiplies a number by itself to calculate its square.</p>
+<div class="code">// Using exponentiation operator
+4 ** 2; // 16
+
+// Using Math.pow()
+Math.pow(4, 2); // 16</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>% (Modulus)</h1>
+<p>Returns the remainder after dividing one number by another.</p>
+<div class="code">// Check if number is odd or even
+5 % 2; // 1 (odd)
+4 % 2; // 0 (even)</div>
+</article>
+</div>
+
+<!-- Page 7 -->
+<div class="page">
+<article>
+<h1>Math.random</h1>
+<p>Generates a random number between 0 and 1.</p>
+<div class="code">// Get a random decimal between 0 and 1
+Math.random(); // 0.58974312
+
+// Get a random number between 0 and 100
+Math.floor(Math.random() * 101); // 42</div>
+</article>
+</div>
 
 </section>
+
+<!-- 
+=========================================================== 
+  BOTTOM
+===========================================================  
+-->
+<section class="middle"></section>
 
 </body>
 </html>
+
+
+<!-- 
+<article>
+<h1></h1>
+<p></p>
+<div class="code"></div>
+</article>
+-->

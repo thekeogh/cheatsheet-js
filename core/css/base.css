@@ -17,7 +17,8 @@ body {
   align-items: flex-start;
   justify-content: flex-start;
   flex-direction: column;
-  display: flex
+  display: flex;
+  cursor: grab;
 }
 body.is-panning {
   cursor: grabbing

@@ -428,7 +428,49 @@ Math.floor(Math.random() * 101); // 42</div>
   BOTTOM
 ===========================================================  
 -->
-<section class="middle"></section>
+<section class="bottom">
+
+<!-- Page 1 -->
+<div class="page">
+<article>
+<h1>entries</h1>
+<p>Returns an iterator containing index-value pairs for each array element.</p>
+<div class="code">let iterator = ["a", "b", "c"].entries();
+iterator.next().value; // [0, "a"]
+iterator.next().value;  // [1, "b"]</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>every</h1>
+<p>Checks if all elements pass the provided test function.</p>
+<div class="code">// Check if all numbers are positive
+[1, 2, 3].every((x, idx) => x > 0); // true
+
+// Check if all strings have length > 1
+["fe", "f"].every(x => x.length > 1); // false</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>fill</h1>
+<p>Fills array elements with a static value between indices.</p>
+<div class="code">// Fill middle section with a value
+[1, 2, 3].fill("x", 1, 2); // [1, "x", 3]
+
+// Fill entire array with a value
+[1, 2, 3].fill(0); // [0, 0, 0]</div>
+</article>
+<!-- ------- -->
+<article>
+<h1>filter</h1>
+<p>Creates a new array with elements that pass the test function.</p>
+<div class="code">["apple", "banana", "berry"].filter(
+  (val, idx) => val.startsWith("b")
+);
+// ["banana", "berry"]</div>
+</article>
+</div>
+
+</section>
 
 </body>
 </html>

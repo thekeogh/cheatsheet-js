@@ -28,4 +28,10 @@
   --dimension-middle-p: 30px;
   --dimension-middle-code: var(--dimension-middle-p);
   --dimension-middle-aside: 24px;
+
+  /* Bottom */
+  --dimension-bottom-h1: 31px;
+  --dimension-bottom-p: 21px;
+  --dimension-bottom-code: var(--dimension-bottom-p);
+  --dimension-bottom-aside: 20px;
 }

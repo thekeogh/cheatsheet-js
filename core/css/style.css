@@ -93,4 +93,35 @@
  * maximum of four cheatsheets at the smallest size.
  */
 
-/* ... */
+
+
+/**
+ * Typography
+ */
+.bottom h1 {
+  margin: 0;
+  font-size: var(--dimension-bottom-h1)
+}
+.bottom p {
+  margin: 0 0 4px;
+  font-size: var(--dimension-bottom-p);
+}
+
+/**
+ * Code
+ */
+.bottom .code pre {
+  padding: 18px;
+  line-height: 1.15;
+}
+.bottom .code pre code {
+  font-size: var(--dimension-bottom-code)
+}
+
+/**
+ * Bullets (UNTESTED SO MAY NEED TO CHANGE)
+ */
+.bottom article ul li {
+  padding: 10px 20px;
+  font-size: var(--dimension-bottom-aside);
+}

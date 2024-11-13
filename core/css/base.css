@@ -63,7 +63,7 @@ pre {
  * Cheats
  */
 article {
-  padding: var(--dimension-page-padding);
+  padding: calc(var(--dimension-page-padding) + 2px);
   background-color: #fff;
   border-radius: var(--dimension-border-radius);
   flex-grow: 1;
@@ -102,6 +102,9 @@ article aside {
   font-family: var(--font-code);
   background: var(--color-orange-100);
   border-radius: 0 0 var(--dimension-border-radius);
+  left: 0;
+  bottom: 0;
+  position: absolute;
 }
 
 /**

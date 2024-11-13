@@ -14,24 +14,24 @@
 
   /* Dimensions */
   --dimension-section-gap: 70px;
-  --dimension-page-padding: 16px;
-  --dimension-border-radius: 12px;
+  --dimension-page-padding: 12px;
+  --dimension-border-radius: 6px;
 
   /* Top */
   --dimension-top-h1: 57px;
-  --dimension-top-p: 37px;
+  --dimension-top-p: 39px;
   --dimension-top-code: var(--dimension-top-p);
   --dimension-top-aside: 24px;
 
   /* Middle */
   --dimension-middle-h1: 45px;
-  --dimension-middle-p: 30px;
+  --dimension-middle-p: 31px;
   --dimension-middle-code: var(--dimension-middle-p);
-  --dimension-middle-aside: 24px;
+  --dimension-middle-aside: 20px;
 
   /* Bottom */
   --dimension-bottom-h1: 31px;
   --dimension-bottom-p: 21px;
-  --dimension-bottom-code: var(--dimension-bottom-p);
-  --dimension-bottom-aside: 20px;
+  --dimension-bottom-code: 22px;
+  --dimension-bottom-aside: 15px;
 }

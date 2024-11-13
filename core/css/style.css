@@ -43,9 +43,6 @@
 .top article aside {
   padding: 20px;
   font-size: var(--dimension-top-aside);
-  left: 0;
-  bottom: 0;
-  position: absolute;
 }
 
 /**
@@ -87,6 +84,14 @@
 }
 
 /**
+ * Notes (UNTESTED SO MAY NEED TO CHANGE)
+ */
+.middle article aside {
+  padding: 20px;
+  font-size: var(--dimension-middle-aside);
+}
+
+/**
  * Bottom cheatsheet styles.
  * ----------------------------------------------------------------------------
  * Defines styles for the smallest cheatsheet variant which accommodates a
@@ -123,5 +128,13 @@
  */
 .bottom article ul li {
   padding: 10px 20px;
+  font-size: var(--dimension-bottom-aside);
+}
+
+/**
+ * Notes
+ */
+.bottom article aside {
+  padding: 6px 14px;
   font-size: var(--dimension-bottom-aside);
 }

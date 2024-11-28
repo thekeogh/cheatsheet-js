@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       lang: "ts",
       theme: "catppuccin-latte",
       colorReplacements: {
-        "#eff1f5": "#f1eff3"
+        "#eff1f5": "#d4d4d4"
       }
     });
     codeBlock.innerHTML = html;

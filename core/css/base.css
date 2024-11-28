@@ -35,9 +35,9 @@ section {
   width: 210mm;
   height: 297mm;
   max-height: 297mm;
-  padding: var(--dimension-page-padding);
+  padding: 28px;
   gap: var(--dimension-page-padding);
-  background: var(--color-purple-10);
+  background: #fff;
   font-family: var(--font-body);
   font-weight: 400;
   flex-direction: column;
@@ -55,15 +55,11 @@ section {
 .code pre code {
   font-family: var(--font-code);
 }
-pre {
-  border-radius: var(--dimension-border-radius)
-}
 
 /**
  * Cheats
  */
 article {
-  padding: calc(var(--dimension-page-padding) + 2px);
   background-color: #fff;
   border-radius: var(--dimension-border-radius);
   flex-grow: 1;
